@@ -6,9 +6,9 @@ export default defineNuxtConfig({
     // Cache static assets for 1 hour
     "/assets/**": { headers: { "cache-control": "max-age=3600" } },
     // Cache pre-rendered pages for 1 hour
-    "/**": { swr: 3600 },
+    "/**": { prerender: true },
   },
   image: {
-    quality: 20,
+    quality: 50,
   },
 });
