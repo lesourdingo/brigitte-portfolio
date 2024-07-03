@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img
+    <NuxtImg
       :src="imageSrc"
       :alt="title"
       class="border-solid border-black border-8"
