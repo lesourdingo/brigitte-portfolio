@@ -5,4 +5,7 @@ export default defineNuxtConfig({
   routeRules: {
     "/**": { prerender: true },
   },
+  image: {
+    quality: 20,
+  },
 });
