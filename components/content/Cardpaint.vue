@@ -3,7 +3,7 @@
     <NuxtImg
       :src="imageSrc"
       :alt="title"
-      class="border-solid border-black border-8"
+      class="w-full"
     />
   </div>
 </template>
@@ -20,5 +20,3 @@ defineProps({
   },
 });
 </script>
-
-<style></style>

@@ -1,33 +1,44 @@
 <template>
   <TheHeader />
-  <div class="flex flex-col md:flex-row gap-8 justify-center md:mt-8 p-4">
-    <NuxtLink to="/peintures" class="card bg-primary w-96 shadow-xl p-4">
-      <figure class="w-full h-64 flex items-center justify-center">
-        <NuxtImg
-          src="/img/peintures/photo1.jpg"
-          class="max-w-full max-h-full object-contain"
-          alt="peinture"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Toutes les peintures</h2>
+  <UMain>
+    <UContainer class="py-8 md:py-12">
+      <div
+        class="mx-auto flex max-w-4xl flex-col items-stretch justify-center gap-10 md:flex-row md:gap-12"
+      >
+        <NuxtLink to="/peintures" class="group flex flex-1 flex-col gap-4">
+          <div
+            class="flex h-64 items-center justify-center rounded-lg bg-elevated/40 p-4 group-hover:bg-primary/5"
+          >
+            <NuxtImg
+              src="/img/peintures/photo1.jpg"
+              class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              alt="peinture"
+            />
+          </div>
+          <p
+            class="text-center text-sm font-bold text-muted group-hover:text-primary"
+          >
+            Toutes les peintures
+          </p>
+        </NuxtLink>
+
+        <NuxtLink to="/scultures" class="group flex flex-1 flex-col gap-4">
+          <div
+            class="flex h-64 items-center justify-center rounded-lg bg-elevated/40 p-4 group-hover:bg-primary/5"
+          >
+            <NuxtImg
+              src="/img/scultures/sculture11.jpg"
+              class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              alt="sculture"
+            />
+          </div>
+          <p
+            class="text-center text-sm font-bold text-muted group-hover:text-primary"
+          >
+            Toutes les scultures
+          </p>
+        </NuxtLink>
       </div>
-    </NuxtLink>
-    <NuxtLink to="/scultures" class="card bg-secondary w-96 shadow-xl p-4">
-      <figure class="w-full h-64 flex items-center justify-center">
-        <NuxtImg
-          src="/img/scultures/sculture11.jpg"
-          class="max-w-full max-h-full object-contain"
-          alt="Shoes"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Toutes les scultures</h2>
-      </div>
-    </NuxtLink>
-  </div>
+    </UContainer>
+  </UMain>
 </template>
-
-<script lang="ts" setup></script>
-
-<style></style>
