@@ -4,3 +4,9 @@
 @theme {
   --font-sans: "Syne", ui-sans-serif, system-ui, sans-serif;
 }
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}

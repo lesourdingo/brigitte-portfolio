@@ -23,7 +23,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <template #right>
       <UButton
-        to="#"
+        to="#contact"
         label="Contact"
         size="sm"
         variant="link"
