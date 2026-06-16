@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import MasonryWall from "@yeger/vue-masonry-wall";
+import { MasonryWall } from "@yeger/vue-masonry-wall";
 
 const { data: list } = await useAsyncData("peintures", () =>
   queryCollection("peintures").all(),

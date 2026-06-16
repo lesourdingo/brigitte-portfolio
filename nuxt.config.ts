@@ -21,4 +21,13 @@ export default defineNuxtConfig({
   image: {
     quality: 50,
   },
+  vite: {
+    optimizeDeps: {
+      include: [
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+        "@yeger/vue-masonry-wall",
+      ],
+    },
+  },
 });
