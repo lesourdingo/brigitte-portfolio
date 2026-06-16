@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2026-06-16",
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxt/image"],
   css: ["~/assets/css/main.css"],
